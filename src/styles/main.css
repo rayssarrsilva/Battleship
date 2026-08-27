@@ -1,0 +1,102 @@
+:root {
+  --cell-size: 32px;
+  --sea: #0b3d91;
+  --ship: #445566;
+  --hit: #d64545;
+  --miss: #cfd8dc;
+  --sunk: #7a1f1f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #eef3f8;
+  margin: 0;
+  padding: 24px;
+  text-align: center;
+  color: #1b1f24;
+}
+
+.app-header h1 {
+  margin-bottom: 4px;
+}
+
+.game-status {
+  font-weight: 600;
+  min-height: 1.2em;
+}
+
+.boards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 24px;
+}
+
+.board-section h2 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(var(--board-size, 10), var(--cell-size));
+  grid-template-rows: repeat(var(--board-size, 10), var(--cell-size));
+  gap: 2px;
+  background: #14213d;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.board--disabled {
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  background: var(--sea);
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.cell--ship {
+  background: var(--ship);
+}
+
+.cell--hit {
+  background: var(--hit);
+}
+
+.cell--sunk {
+  background: var(--sunk);
+}
+
+.cell--miss {
+  background: var(--miss);
+  cursor: default;
+}
+
+.controls {
+  margin-top: 24px;
+}
+
+#new-game-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #14213d;
+  color: #fff;
+  cursor: pointer;
+}
+
+#new-game-btn:hover {
+  background: #1f2f57;
+}
