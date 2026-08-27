@@ -2,6 +2,9 @@
 
 A classic Battleship game built with **Test Driven Development (Jest)**, ES Modules, and a layered **MVC-style architecture** (models / views / controllers), bundled with **Webpack** and deployable to **GitHub Pages**.
 
+## Demo
+<img width="1920" height="881" alt="battleship" src="https://github.com/user-attachments/assets/ae259df7-a406-47ff-896f-43caafbb64c6" />
+
 🇬🇧 [English](#english) · 🇧🇷 [Português](#português)
 
 ---
