@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleship</title>
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Battleship</h1>
+      <p id="game-status" class="game-status">Place your ships to start</p>
+    </header>
+
+    <main class="boards-wrapper">
+      <section class="board-section">
+        <h2>Your fleet</h2>
+        <div id="player-board" class="board"></div>
+      </section>
+
+      <section class="board-section">
+        <h2>Enemy waters</h2>
+        <div id="computer-board" class="board"></div>
+      </section>
+    </main>
+
+    <footer class="controls">
+      <button id="new-game-btn" type="button">New game (random placement)</button>
+    </footer>
+  </body>
+</html>
